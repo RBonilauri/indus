@@ -1,0 +1,7 @@
+build:
+  - name: 'grc.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/indus:$SHORT_SHA', '.']
+
+push:
+  - name: 'grc.io/cloud-buikders/docker'
+    args: ['push', 'gr.io/$PROJECT_ID/indus:$SHORT_SHA']
